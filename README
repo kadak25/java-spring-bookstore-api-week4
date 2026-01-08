@@ -1,0 +1,48 @@
+# Kitapçı - Full Stack Online Kitap Satış Platformu 📚
+
+Tamamen **Spring Boot (Java)** backend ve **React + Vite + TypeScript** frontend ile geliştirilmiş modern bir online kitap satış uygulaması.
+
+### Özellikler
+- **Kullanıcı Sistemi**
+  - Kayıt ol / Giriş yap (JWT tabanlı kimlik doğrulama)
+  - Rol bazlı yetkilendirme (USER ve ADMIN)
+  - Token ile güvenli oturum yönetimi
+
+- **Kitap Yönetimi**
+  - Tüm kitapları listele (kart tasarımı, responsive grid)
+  - Kitap detayları (yazar, ISBN, fiyat, stok, açıklama, kategoriler)
+  - ADMIN paneli ile yeni kitap ekleme
+
+- **Kategori Sistemi**
+  - Kitaplara birden fazla kategori atama (ManyToMany ilişki)
+
+- **Tasarım & Kullanıcı Deneyimi**
+  - Dark tema, modern ve temiz arayüz
+  - Tam responsive (mobil, tablet, desktop uyumlu)
+  - Hover efektleri, geçiş animasyonları
+  - Navbar ile kolay gezinme (Ana Sayfa, Kitaplar, Admin Panel, Çıkış Yap)
+
+### Teknolojiler
+**Backend**
+- Spring Boot 3.x
+- Spring Security + JWT
+- Spring Data JPA (H2 in-memory database)
+- Lombok
+
+**Frontend**
+- React + Vite
+- TypeScript
+- React Router DOM
+- Axios (API istekleri)
+- CSS (inline styling ile hızlı prototip)
+
+### Kurulum & Çalıştırma
+1. Backend
+   ```bash
+   cd bookstore-api
+   ./mvnw spring-boot:run
+
+2. Frontend
+cd bookstore-frontend
+npm install
+npm run dev
